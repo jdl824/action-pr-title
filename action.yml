@@ -26,6 +26,14 @@ inputs:
     description: 'Max length of title. -1 to ignore the rule'
     required: false
     default: '-1'
+  flags:
+    description: "Regexp flags of the object."
+    required: false
+    default: ""
+  helpMessage:
+    description: "Help message displayed in the action execution logs to help the user understand how to correct the title of the Pull Request."
+    required: false
+    default: ""
   github_token:
     description: >
       Personal access token (PAT) used to fetch the repository. The PAT is configured
