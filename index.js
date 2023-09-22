@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const validEvent = ['push'];
+const validEvent = ['pull_request'];
 
 function validateTitlePrefix(title, prefix, caseSensitive) {
     if (!caseSensitive) {
