@@ -30,7 +30,7 @@ inputs:
     description: "Regexp flags of the object."
     required: false
     default: ""
-  helpMessage:
+  help_message:
     description: "Help message displayed in the action execution logs to help the user understand how to correct the title of the Pull Request."
     required: false
     default: ""
