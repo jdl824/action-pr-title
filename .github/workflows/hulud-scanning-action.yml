@@ -1,0 +1,16 @@
+name: Security Scan - S.Hulud 2
+
+on: [workflow_dispatch, push, pull_request]
+
+jobs:
+  scan:
+    runs-on: sw-gh-ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - name: Run security scan
+      uses: sherwin-williams-co/package-security-scan-shai-hulud-2-composite@v2.0.0
+      with:
+        scan-path: '.'
+        fail-on-detection: true
+        create-issue: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}
