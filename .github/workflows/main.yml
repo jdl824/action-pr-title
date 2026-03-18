@@ -5,10 +5,8 @@ on:
     types: ['opened', 'edited', 'reopened']
 jobs:
   build:
-    # Job name is Greeting
     name: Check
-    # This job runs on Linux
-    runs-on: 'sw-ubuntu-latest'
+    runs-on: 'sw-gh-ubuntu-latest'
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v6
